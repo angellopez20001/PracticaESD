@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://dmd_ontologia.um.es/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+  <rdf:Description rdf:about="http://dmd_recursos.um.es/DuchenneMuscularDystrophy">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/DOID_DOID_11723"/>
+    <rdf:type rdf:resource="https://w3id.org/biolink/vocab/Disease"/>
+    <rdfs:label xml:lang="es">Distrofia Muscular de Duchenne</rdfs:label>
+    <rdfs:label xml:lang="en">Duchenne Muscular Dystrophy</rdfs:label>
+    <rdfs:comment xml:lang="es">Enfermedad genética recesiva ligada al cromosoma X causada por mutaciones en el gen DMD.</rdfs:comment>
+    <ns0:tieneHerencia>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/HerenciaRecesivaLigadaX">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0001419"/>
+        <rdfs:label xml:lang="es">Herencia Recesiva Ligada al X</rdfs:label>
+        <rdfs:comment xml:lang="es">Patrón de herencia donde el gen mutado se encuentra en el cromosoma X.</rdfs:comment>
+      </rdf:Description>
+    </ns0:tieneHerencia>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/Mutacion_Del_Exon51">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000159"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/SequenceVariant"/>
+        <rdfs:label xml:lang="es">Deleción exón 51</rdfs:label>
+        <rdfs:comment xml:lang="es">Deleción del exón 51 del gen DMD, tratable con exon skipping.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX"/>
+        <ns0:afectaGen rdf:resource="http://dmd_recursos.um.es/Gen_DMD"/>
+        <ns0:localizadaEn>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/Exon_51">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000147"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/GenomicEntity"/>
+            <rdfs:label xml:lang="es">Exón 51</rdfs:label>
+          </rdf:Description>
+        </ns0:localizadaEn>
+
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.02</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://dmd_recursos.um.es/Proteina_Distrofina"/>
+        <ns0:tratadaCon>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/Eteplirsen">
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/Drug"/>
+            <rdfs:label xml:lang="es">Eteplirsen</rdfs:label>
+            <rdfs:label xml:lang="es">Exondys 51</rdfs:label>
+            <rdfs:comment xml:lang="es">Oligonucleótido antisentido que permite el salto del exón 51.</rdfs:comment>
+            <rdfs:seeAlso rdf:resource="https://www.drugbank.ca/drugs/DB11598"/>
+            <ns0:mecanismoAccion xml:lang="es">Exon skipping del exón 51</ns0:mecanismoAccion>
+          </rdf:Description>
+        </ns0:tratadaCon>
+
+        <ns0:tratadaCon rdf:resource="http://dmd_recursos.um.es/Deflazacort"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/Mutacion_Del_Exon45">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000159"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/SequenceVariant"/>
+        <rdfs:label xml:lang="es">Deleción exón 45</rdfs:label>
+        <rdfs:comment xml:lang="es">Deleción del exón 45 del gen DMD.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX"/>
+        <ns0:afectaGen rdf:resource="http://dmd_recursos.um.es/Gen_DMD"/>
+        <ns0:localizadaEn>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/Exon_45">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000147"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/GenomicEntity"/>
+            <rdfs:label xml:lang="es">Exón 45</rdfs:label>
+          </rdf:Description>
+        </ns0:localizadaEn>
+
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.015</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://dmd_recursos.um.es/Proteina_Distrofina"/>
+        <ns0:tratadaCon rdf:resource="http://dmd_recursos.um.es/Deflazacort"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/Mutacion_Del_Exon53">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000159"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/SequenceVariant"/>
+        <rdfs:label xml:lang="es">Deleción exón 53</rdfs:label>
+        <rdfs:comment xml:lang="es">Deleción del exón 53 del gen DMD.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX"/>
+        <ns0:afectaGen rdf:resource="http://dmd_recursos.um.es/Gen_DMD"/>
+        <ns0:localizadaEn>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/Exon_53">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000147"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/GenomicEntity"/>
+            <rdfs:label xml:lang="es">Exón 53</rdfs:label>
+          </rdf:Description>
+        </ns0:localizadaEn>
+
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.018</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://dmd_recursos.um.es/Proteina_Distrofina"/>
+        <ns0:tratadaCon>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/Golodirsen">
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/Drug"/>
+            <rdfs:label xml:lang="es">Golodirsen</rdfs:label>
+            <rdfs:label xml:lang="es">Vyondys 53</rdfs:label>
+            <rdfs:comment xml:lang="es">Oligonucleótido antisentido que permite el salto del exón 53.</rdfs:comment>
+            <rdfs:seeAlso rdf:resource="https://www.drugbank.ca/drugs/DB15381"/>
+            <ns0:mecanismoAccion xml:lang="es">Exon skipping del exón 53</ns0:mecanismoAccion>
+          </rdf:Description>
+        </ns0:tratadaCon>
+
+        <ns0:tratadaCon rdf:resource="http://dmd_recursos.um.es/Deflazacort"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/Mutacion_c9563T_A">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0001587"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/SequenceVariant"/>
+        <rdfs:label xml:lang="es">c.9563T&gt;A</rdfs:label>
+        <rdfs:label xml:lang="es">p.Leu3188Ter</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación sin sentido que introduce un codón de parada prematuro.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX"/>
+        <ns0:afectaGen rdf:resource="http://dmd_recursos.um.es/Gen_DMD"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.005</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://dmd_recursos.um.es/Proteina_Distrofina"/>
+        <ns0:tratadaCon rdf:resource="http://dmd_recursos.um.es/Ataluren"/>
+        <ns0:tratadaCon rdf:resource="http://dmd_recursos.um.es/Deflazacort"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/Mutacion_c10141C_T">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0001587"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/SequenceVariant"/>
+        <rdfs:label xml:lang="es">c.10141C&gt;T</rdfs:label>
+        <rdfs:label xml:lang="es">p.Arg3381Ter</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación sin sentido que genera un codón stop prematuro.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX"/>
+        <ns0:afectaGen rdf:resource="http://dmd_recursos.um.es/Gen_DMD"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.004</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://dmd_recursos.um.es/Proteina_Distrofina"/>
+        <ns0:tratadaCon rdf:resource="http://dmd_recursos.um.es/Ataluren"/>
+        <ns0:tratadaCon rdf:resource="http://dmd_recursos.um.es/Deflazacort"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/Mutacion_Dup_Exon2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_1000035"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/SequenceVariant"/>
+        <rdfs:label xml:lang="es">Duplicación exón 2</rdfs:label>
+        <rdfs:comment xml:lang="es">Duplicación del exón 2 del gen DMD.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX"/>
+        <ns0:afectaGen rdf:resource="http://dmd_recursos.um.es/Gen_DMD"/>
+        <ns0:localizadaEn>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/Exon_2">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000147"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/GenomicEntity"/>
+            <rdfs:label xml:lang="es">Exón 2</rdfs:label>
+          </rdf:Description>
+        </ns0:localizadaEn>
+
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.025</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://dmd_recursos.um.es/Proteina_Distrofina"/>
+        <ns0:tratadaCon rdf:resource="http://dmd_recursos.um.es/Deflazacort"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:tieneFenotipo>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/FenotipoMusculoesqueletico">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0003560"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/PhenotypicFeature"/>
+        <rdfs:label xml:lang="es">Manifestaciones Musculoesqueléticas</rdfs:label>
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/DebilidadMuscularProximal">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0003701"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/PhenotypicFeature"/>
+            <rdfs:label xml:lang="es">Debilidad muscular proximal</rdfs:label>
+            <rdfs:comment xml:lang="es">Debilidad progresiva en músculos proximales.</rdfs:comment>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0003701"/>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/PseudohipertrofiaPantorrillas">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0008981"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/PhenotypicFeature"/>
+            <rdfs:label xml:lang="es">Pseudohipertrofia de pantorrillas</rdfs:label>
+            <rdfs:comment xml:lang="es">Aumento del tamaño de pantorrillas por infiltración grasa.</rdfs:comment>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0008981"/>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/CKElevada">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0003236"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/PhenotypicFeature"/>
+            <rdfs:label xml:lang="es">Creatina quinasa elevada</rdfs:label>
+            <rdfs:comment xml:lang="es">Niveles muy elevados de CK sérica.</rdfs:comment>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0003236"/>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+      </rdf:Description>
+    </ns0:tieneFenotipo>
+
+    <ns0:tieneFenotipo>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/FenotipoCardiaco">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0001627"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/PhenotypicFeature"/>
+        <rdfs:label xml:lang="es">Manifestaciones Cardíacas</rdfs:label>
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/MiocardiopatiaDilatada">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0001644"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/PhenotypicFeature"/>
+            <rdfs:label xml:lang="es">Miocardiopatía dilatada</rdfs:label>
+            <rdfs:comment xml:lang="es">Dilatación y disfunción del ventrículo izquierdo.</rdfs:comment>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0001644"/>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dmd_recursos.um.es/InsuficienciaCardiaca">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0001635"/>
+            <rdf:type rdf:resource="https://w3id.org/biolink/vocab/PhenotypicFeature"/>
+            <rdfs:label xml:lang="es">Insuficiencia cardíaca</rdfs:label>
+            <rdfs:comment xml:lang="es">Incapacidad del corazón para bombear sangre eficientemente.</rdfs:comment>
+            <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/HP_HP_0001635"/>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+      </rdf:Description>
+    </ns0:tieneFenotipo>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_recursos.um.es/Gen_DMD">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000704"/>
+    <rdf:type rdf:resource="https://w3id.org/biolink/vocab/Gene"/>
+    <rdfs:label xml:lang="es">Gen DMD</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/gene/1756"/>
+    <rdfs:comment xml:lang="es">Gen que codifica la proteína distrofina, localizado en el cromosoma X.</rdfs:comment>
+    <ns0:localizadaEn>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/CromosomaX">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_SO_0000340"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/GenomicEntity"/>
+        <rdfs:label xml:lang="es">Cromosoma X</rdfs:label>
+      </rdf:Description>
+    </ns0:localizadaEn>
+
+    <ns0:codifica rdf:resource="http://dmd_recursos.um.es/Proteina_Distrofina"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_recursos.um.es/Proteina_Distrofina">
+    <rdf:type rdf:resource="https://w3id.org/biolink/vocab/Protein"/>
+    <rdfs:label xml:lang="es">Distrofina</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://purl.uniprot.org/uniprot/P11532"/>
+    <rdfs:comment xml:lang="es">Proteína estructural que conecta el citoesqueleto con la matriz extracelular en fibras musculares.</rdfs:comment>
+    <ns0:participaEn>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/FuncionEstructuralMusculo">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_GO_0008307"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/MolecularActivity"/>
+        <rdfs:label xml:lang="es">Componente estructural del músculo</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_GO_0008307"/>
+      </rdf:Description>
+    </ns0:participaEn>
+
+    <ns0:participaEn>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/UnionActina">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_GO_0003779"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/MolecularActivity"/>
+        <rdfs:label xml:lang="es">Unión a actina</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_GO_0003779"/>
+      </rdf:Description>
+    </ns0:participaEn>
+
+    <ns0:participaEn>
+      <rdf:Description rdf:about="http://dmd_recursos.um.es/ContraMusculo">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_GO_0006936"/>
+        <rdf:type rdf:resource="https://w3id.org/biolink/vocab/BiologicalProcess"/>
+        <rdfs:label xml:lang="es">Contracción muscular</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_GO_0006936"/>
+      </rdf:Description>
+    </ns0:participaEn>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_recursos.um.es/Ataluren">
+    <rdf:type rdf:resource="https://w3id.org/biolink/vocab/Drug"/>
+    <rdfs:label xml:lang="es">Ataluren</rdfs:label>
+    <rdfs:label xml:lang="es">Translarna</rdfs:label>
+    <rdfs:comment xml:lang="es">Permite la lectura a través de codones de parada prematuros.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://www.drugbank.ca/drugs/DB08820"/>
+    <ns0:mecanismoAccion xml:lang="es">Readthrough de codones stop prematuros</ns0:mecanismoAccion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_recursos.um.es/Deflazacort">
+    <rdf:type rdf:resource="https://w3id.org/biolink/vocab/Drug"/>
+    <rdfs:label xml:lang="es">Deflazacort</rdfs:label>
+    <rdfs:label xml:lang="es">Emflaza</rdfs:label>
+    <rdfs:comment xml:lang="es">Corticoide que reduce la inflamación muscular.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://www.drugbank.ca/drugs/DB01380"/>
+    <ns0:mecanismoAccion xml:lang="es">Efecto antiinflamatorio e inmunomodulador</ns0:mecanismoAccion>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/causadaPor">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_RO_0003302"/>
+    <owl:sameAs rdf:resource="https://w3id.org/biolink/vocab/causes"/>
+    <rdfs:label xml:lang="es">causada por</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/afectaGen">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GENO_GENO_0000418"/>
+    <owl:sameAs rdf:resource="https://w3id.org/biolink/vocab/gene_associated_with_condition"/>
+    <rdfs:label xml:lang="es">afecta gen</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/codifica">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_RO_0002205"/>
+    <rdfs:label xml:lang="es">codifica</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/participaEn">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_RO_0000056"/>
+    <rdfs:label xml:lang="es">participa en</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/tratadaCon">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_RO_0002302"/>
+    <owl:sameAs rdf:resource="https://w3id.org/biolink/vocab/treats"/>
+    <rdfs:label xml:lang="es">tratada con</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/tieneFenotipo">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_RO_0002200"/>
+    <owl:sameAs rdf:resource="https://w3id.org/biolink/vocab/has_phenotype"/>
+    <rdfs:label xml:lang="es">tiene fenotipo</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/localizadaEn">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_RO_0001025"/>
+    <owl:sameAs rdf:resource="https://w3id.org/biolink/vocab/location_of"/>
+    <rdfs:label xml:lang="es">localizada en</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/tieneFrecuenciaAlelica">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/STATO_STATO_0000254"/>
+    <rdfs:label xml:lang="es">tiene frecuencia alélica</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/reduce_expresion">
+    <rdfs:label xml:lang="es">reduce expresión</rdfs:label>
+    <rdfs:comment xml:lang="es">La mutación reduce o elimina la producción de proteína funcional.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/regula_negativamente">
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_RO_0002212"/>
+    <rdfs:label xml:lang="es">regula negativamente</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/tieneHerencia">
+    <rdfs:label xml:lang="es">tiene herencia</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmd_ontologia.um.es/mecanismoAccion">
+    <rdfs:label xml:lang="es">mecanismo de acción</rdfs:label>
+  </rdf:Description>
+
+</rdf:RDF>

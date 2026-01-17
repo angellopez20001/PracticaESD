@@ -1,0 +1,323 @@
+@prefix dmd_r: <http://dmd_recursos.um.es/> .
+@prefix dmd_o: <http://dmd_ontologia.um.es/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix so: <http://purl.obolibrary.org/obo/SO_> .
+@prefix hp: <http://purl.obolibrary.org/obo/HP_> .
+@prefix go: <http://purl.obolibrary.org/obo/GO_> .
+@prefix doid: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix ro: <http://purl.obolibrary.org/obo/RO_> .
+@prefix geno: <http://purl.obolibrary.org/obo/GENO_> .
+@prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
+
+@prefix uniprot: <http://purl.uniprot.org/uniprot/> .
+@prefix ncbi_gene: <https://www.ncbi.nlm.nih.gov/gene/> .
+@prefix clinvar: <https://www.ncbi.nlm.nih.gov/clinvar/variation/> .
+@prefix drugbank: <https://www.drugbank.ca/drugs/> .
+
+@prefix biolink: <https://w3id.org/biolink/vocab/> .
+
+
+
+dmd_r:DuchenneMuscularDystrophy
+    rdf:type doid:DOID_11723, biolink:Disease ;
+    rdfs:label "Distrofia Muscular de Duchenne"@es ;
+    rdfs:label "Duchenne Muscular Dystrophy"@en ;
+    rdfs:comment "Enfermedad genética recesiva ligada al cromosoma X causada por mutaciones en el gen DMD."@es ;
+    dmd_o:tieneHerencia dmd_r:HerenciaRecesivaLigadaX ;
+    dmd_o:causadaPor dmd_r:Mutacion_Del_Exon51 ;
+    dmd_o:causadaPor dmd_r:Mutacion_Del_Exon45 ;
+    dmd_o:causadaPor dmd_r:Mutacion_Del_Exon53 ;
+    dmd_o:causadaPor dmd_r:Mutacion_c9563T_A ;
+    dmd_o:causadaPor dmd_r:Mutacion_c10141C_T ;
+    dmd_o:causadaPor dmd_r:Mutacion_Dup_Exon2 ;
+    dmd_o:tieneFenotipo dmd_r:FenotipoMusculoesqueletico ;
+    dmd_o:tieneFenotipo dmd_r:FenotipoCardiaco .
+
+# HERENCIA
+
+
+dmd_r:HerenciaRecesivaLigadaX
+    rdf:type hp:HP_0001419 ;
+    rdfs:label "Herencia Recesiva Ligada al X"@es ;
+    rdfs:comment "Patrón de herencia donde el gen mutado se encuentra en el cromosoma X."@es .
+
+
+# GEN Y CROMOSOMA
+
+
+dmd_r:Gen_DMD
+    rdf:type so:SO_0000704, biolink:Gene ;
+    rdfs:label "Gen DMD"@es ;
+    rdfs:seeAlso ncbi_gene:1756 ;
+    rdfs:comment "Gen que codifica la proteína distrofina, localizado en el cromosoma X."@es ;
+    dmd_o:localizadaEn dmd_r:CromosomaX ;
+    dmd_o:codifica dmd_r:Proteina_Distrofina .
+
+dmd_r:CromosomaX
+    rdf:type so:SO_0000340, biolink:GenomicEntity ;
+    rdfs:label "Cromosoma X"@es .
+
+# PROTEÍNA
+
+
+dmd_r:Proteina_Distrofina
+    rdf:type biolink:Protein ;
+    rdfs:label "Distrofina"@es ;
+    rdfs:seeAlso uniprot:P11532 ;
+    rdfs:comment "Proteína estructural que conecta el citoesqueleto con la matriz extracelular en fibras musculares."@es ;
+    dmd_o:participaEn dmd_r:FuncionEstructuralMusculo ;
+    dmd_o:participaEn dmd_r:UnionActina ;
+    dmd_o:participaEn dmd_r:ContraMusculo .
+
+
+# FUNCIONES BIOLÓGICAS
+
+
+dmd_r:FuncionEstructuralMusculo
+    rdf:type go:GO_0008307, biolink:MolecularActivity ;
+    rdfs:label "Componente estructural del músculo"@es ;
+    owl:sameAs go:GO_0008307 .
+
+dmd_r:UnionActina
+    rdf:type go:GO_0003779, biolink:MolecularActivity ;
+    rdfs:label "Unión a actina"@es ;
+    owl:sameAs go:GO_0003779 .
+
+dmd_r:ContraMusculo
+    rdf:type go:GO_0006936, biolink:BiologicalProcess ;
+    rdfs:label "Contracción muscular"@es ;
+    owl:sameAs go:GO_0006936 .
+
+
+# EXONES
+
+
+dmd_r:Exon_45
+    rdf:type so:SO_0000147, biolink:GenomicEntity ;
+    rdfs:label "Exón 45"@es .
+
+dmd_r:Exon_51
+    rdf:type so:SO_0000147, biolink:GenomicEntity ;
+    rdfs:label "Exón 51"@es .
+
+dmd_r:Exon_53
+    rdf:type so:SO_0000147, biolink:GenomicEntity ;
+    rdfs:label "Exón 53"@es .
+
+dmd_r:Exon_2
+    rdf:type so:SO_0000147, biolink:GenomicEntity ;
+    rdfs:label "Exón 2"@es .
+
+
+# MUTACIONES - DELECIONES
+
+dmd_r:Mutacion_Del_Exon51
+    rdf:type so:SO_0000159, biolink:SequenceVariant ;
+    rdfs:label "Deleción exón 51"@es ;
+    rdfs:comment "Deleción del exón 51 del gen DMD, tratable con exon skipping."@es ;
+    rdfs:seeAlso clinvar:XXXXX ;
+    dmd_o:afectaGen dmd_r:Gen_DMD ;
+    dmd_o:localizadaEn dmd_r:Exon_51 ;
+    dmd_o:tieneFrecuenciaAlelica "0.02"^^xsd:float ;
+    dmd_o:regula_negativamente dmd_r:Proteina_Distrofina ;
+    dmd_o:tratadaCon dmd_r:Eteplirsen ;
+    dmd_o:tratadaCon dmd_r:Deflazacort .
+
+dmd_r:Mutacion_Del_Exon45
+    rdf:type so:SO_0000159, biolink:SequenceVariant ;
+    rdfs:label "Deleción exón 45"@es ;
+    rdfs:comment "Deleción del exón 45 del gen DMD."@es ;
+    rdfs:seeAlso clinvar:XXXXX ;
+    dmd_o:afectaGen dmd_r:Gen_DMD ;
+    dmd_o:localizadaEn dmd_r:Exon_45 ;
+    dmd_o:tieneFrecuenciaAlelica "0.015"^^xsd:float ;
+    dmd_o:regula_negativamente dmd_r:Proteina_Distrofina ;
+    dmd_o:tratadaCon dmd_r:Deflazacort .
+
+dmd_r:Mutacion_Del_Exon53
+    rdf:type so:SO_0000159, biolink:SequenceVariant ;
+    rdfs:label "Deleción exón 53"@es ;
+    rdfs:comment "Deleción del exón 53 del gen DMD."@es ;
+    rdfs:seeAlso clinvar:XXXXX ;
+    dmd_o:afectaGen dmd_r:Gen_DMD ;
+    dmd_o:localizadaEn dmd_r:Exon_53 ;
+    dmd_o:tieneFrecuenciaAlelica "0.018"^^xsd:float ;
+    dmd_o:regula_negativamente dmd_r:Proteina_Distrofina ;
+    dmd_o:tratadaCon dmd_r:Golodirsen ;
+    dmd_o:tratadaCon dmd_r:Deflazacort .
+
+
+# MUTACIONES - DUPLICACIÓN
+
+dmd_r:Mutacion_Dup_Exon2
+    rdf:type so:SO_1000035, biolink:SequenceVariant ;
+    rdfs:label "Duplicación exón 2"@es ;
+    rdfs:comment "Duplicación del exón 2 del gen DMD."@es ;
+    rdfs:seeAlso clinvar:XXXXX ;
+    dmd_o:afectaGen dmd_r:Gen_DMD ;
+    dmd_o:localizadaEn dmd_r:Exon_2 ;
+    dmd_o:tieneFrecuenciaAlelica "0.025"^^xsd:float ;
+    dmd_o:regula_negativamente dmd_r:Proteina_Distrofina ;
+    dmd_o:tratadaCon dmd_r:Deflazacort .
+
+
+# MUTACIONES - NONSENSE
+
+
+dmd_r:Mutacion_c9563T_A
+    rdf:type so:SO_0001587, biolink:SequenceVariant ;
+    rdfs:label "c.9563T>A"@es ;
+    rdfs:label "p.Leu3188Ter"@es ;
+    rdfs:comment "Mutación sin sentido que introduce un codón de parada prematuro."@es ;
+    rdfs:seeAlso clinvar:XXXXX ;
+    dmd_o:afectaGen dmd_r:Gen_DMD ;
+    dmd_o:tieneFrecuenciaAlelica "0.005"^^xsd:float ;
+    dmd_o:reduce_expresion dmd_r:Proteina_Distrofina ;
+    dmd_o:tratadaCon dmd_r:Ataluren ;
+    dmd_o:tratadaCon dmd_r:Deflazacort .
+
+dmd_r:Mutacion_c10141C_T
+    rdf:type so:SO_0001587, biolink:SequenceVariant ;
+    rdfs:label "c.10141C>T"@es ;
+    rdfs:label "p.Arg3381Ter"@es ;
+    rdfs:comment "Mutación sin sentido que genera un codón stop prematuro."@es ;
+    rdfs:seeAlso clinvar:XXXXX ;
+    dmd_o:afectaGen dmd_r:Gen_DMD ;
+    dmd_o:tieneFrecuenciaAlelica "0.004"^^xsd:float ;
+    dmd_o:reduce_expresion dmd_r:Proteina_Distrofina ;
+    dmd_o:tratadaCon dmd_r:Ataluren ;
+    dmd_o:tratadaCon dmd_r:Deflazacort .
+
+
+# FÁRMACOS
+
+dmd_r:Eteplirsen
+    rdf:type biolink:Drug ;
+    rdfs:label "Eteplirsen"@es ;
+    rdfs:label "Exondys 51"@es ;
+    rdfs:comment "Oligonucleótido antisentido que permite el salto del exón 51."@es ;
+    rdfs:seeAlso drugbank:DB11598 ;
+    dmd_o:mecanismoAccion "Exon skipping del exón 51"@es .
+
+dmd_r:Golodirsen
+    rdf:type biolink:Drug ;
+    rdfs:label "Golodirsen"@es ;
+    rdfs:label "Vyondys 53"@es ;
+    rdfs:comment "Oligonucleótido antisentido que permite el salto del exón 53."@es ;
+    rdfs:seeAlso drugbank:DB15381 ;
+    dmd_o:mecanismoAccion "Exon skipping del exón 53"@es .
+
+dmd_r:Ataluren
+    rdf:type biolink:Drug ;
+    rdfs:label "Ataluren"@es ;
+    rdfs:label "Translarna"@es ;
+    rdfs:comment "Permite la lectura a través de codones de parada prematuros."@es ;
+    rdfs:seeAlso drugbank:DB08820 ;
+    dmd_o:mecanismoAccion "Readthrough de codones stop prematuros"@es .
+
+dmd_r:Deflazacort
+    rdf:type biolink:Drug ;
+    rdfs:label "Deflazacort"@es ;
+    rdfs:label "Emflaza"@es ;
+    rdfs:comment "Corticoide que reduce la inflamación muscular."@es ;
+    rdfs:seeAlso drugbank:DB01380 ;
+    dmd_o:mecanismoAccion "Efecto antiinflamatorio e inmunomodulador"@es .
+
+# FENOTIPOS
+
+
+dmd_r:FenotipoMusculoesqueletico
+    rdf:type hp:HP_0003560, biolink:PhenotypicFeature ;
+    rdfs:label "Manifestaciones Musculoesqueléticas"@es ;
+    dmd_o:tieneFenotipo dmd_r:DebilidadMuscularProximal ;
+    dmd_o:tieneFenotipo dmd_r:PseudohipertrofiaPantorrillas ;
+    dmd_o:tieneFenotipo dmd_r:CKElevada .
+
+dmd_r:DebilidadMuscularProximal
+    rdf:type hp:HP_0003701, biolink:PhenotypicFeature ;
+    rdfs:label "Debilidad muscular proximal"@es ;
+    rdfs:comment "Debilidad progresiva en músculos proximales."@es ;
+    owl:sameAs hp:HP_0003701 .
+
+dmd_r:PseudohipertrofiaPantorrillas
+    rdf:type hp:HP_0008981, biolink:PhenotypicFeature ;
+    rdfs:label "Pseudohipertrofia de pantorrillas"@es ;
+    rdfs:comment "Aumento del tamaño de pantorrillas por infiltración grasa."@es ;
+    owl:sameAs hp:HP_0008981 .
+
+dmd_r:CKElevada
+    rdf:type hp:HP_0003236, biolink:PhenotypicFeature ;
+    rdfs:label "Creatina quinasa elevada"@es ;
+    rdfs:comment "Niveles muy elevados de CK sérica."@es ;
+    owl:sameAs hp:HP_0003236 .
+
+dmd_r:FenotipoCardiaco
+    rdf:type hp:HP_0001627, biolink:PhenotypicFeature ;
+    rdfs:label "Manifestaciones Cardíacas"@es ;
+    dmd_o:tieneFenotipo dmd_r:MiocardiopatiaDilatada ;
+    dmd_o:tieneFenotipo dmd_r:InsuficienciaCardiaca .
+
+dmd_r:MiocardiopatiaDilatada
+    rdf:type hp:HP_0001644, biolink:PhenotypicFeature ;
+    rdfs:label "Miocardiopatía dilatada"@es ;
+    rdfs:comment "Dilatación y disfunción del ventrículo izquierdo."@es ;
+    owl:sameAs hp:HP_0001644 .
+
+dmd_r:InsuficienciaCardiaca
+    rdf:type hp:HP_0001635, biolink:PhenotypicFeature ;
+    rdfs:label "Insuficiencia cardíaca"@es ;
+    rdfs:comment "Incapacidad del corazón para bombear sangre eficientemente."@es ;
+    owl:sameAs hp:HP_0001635 .
+
+# PROPIEDADES MAPEADAS A BIOLINK Y RO
+
+
+dmd_o:causadaPor
+    owl:sameAs ro:RO_0003302, biolink:causes ;
+    rdfs:label "causada por"@es .
+
+dmd_o:afectaGen
+    owl:sameAs geno:GENO_0000418, biolink:gene_associated_with_condition ;
+    rdfs:label "afecta gen"@es .
+
+dmd_o:codifica
+    owl:sameAs ro:RO_0002205 ;
+    rdfs:label "codifica"@es .
+
+dmd_o:participaEn
+    owl:sameAs ro:RO_0000056 ;
+    rdfs:label "participa en"@es .
+
+dmd_o:tratadaCon
+    owl:sameAs ro:RO_0002302, biolink:treats ;
+    rdfs:label "tratada con"@es .
+
+dmd_o:tieneFenotipo
+    owl:sameAs ro:RO_0002200, biolink:has_phenotype ;
+    rdfs:label "tiene fenotipo"@es .
+
+dmd_o:localizadaEn
+    owl:sameAs ro:RO_0001025, biolink:location_of ;
+    rdfs:label "localizada en"@es .
+
+dmd_o:tieneFrecuenciaAlelica
+    owl:sameAs stato:STATO_0000254 ;
+    rdfs:label "tiene frecuencia alélica"@es .
+
+dmd_o:reduce_expresion
+    rdfs:label "reduce expresión"@es ;
+    rdfs:comment "La mutación reduce o elimina la producción de proteína funcional."@es .
+
+dmd_o:regula_negativamente
+    owl:sameAs ro:RO_0002212 ;
+    rdfs:label "regula negativamente"@es .
+
+dmd_o:tieneHerencia
+    rdfs:label "tiene herencia"@es .
+
+dmd_o:mecanismoAccion
+    rdfs:label "mecanismo de acción"@es .
