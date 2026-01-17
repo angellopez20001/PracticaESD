@@ -1,0 +1,166 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+# DATASET PRINCIPAL
+
+
+<https://um.es/data/DMDgrafoDataset>
+    a dcat:Dataset ;
+    dct:title "Grafo de Conocimiento sobre Distrofia Muscular de Duchenne"@es ;
+    dct:title "Knowledge Graph on Duchenne Muscular Dystrophy"@en ;
+    dct:description """Grafo RDF que integra información genética, molecular, fenotípica y terapéutica 
+    sobre la Distrofia Muscular de Duchenne (DMD). Incluye mutaciones del gen DMD, clasificación 
+    funcional según Sequence Ontology, fenotipos clínicos anotados con HPO, funciones biológicas 
+    de la distrofina según GO, y tratamientos dirigidos incluyendo terapias de exon skipping.
+    El grafo utiliza el modelo BioLink para garantizar interoperabilidad."""@es ;
+    
+    # CREADOR 
+    dct:creator <https://um.es/person/AngelLopez> ;
+    
+    # FECHAS 
+    dct:created "2026-01-17"^^xsd:date ;
+    dct:modified "2026-01-17"^^xsd:date ;
+    dct:issued "2026-01-17"^^xsd:date ;
+    
+    # TEMAS Y PALABRAS CLAVE
+    dcat:theme <http://purl.obolibrary.org/obo/DOID_11723> ;
+    dcat:keyword "Distrofia Muscular de Duchenne"@es, "Duchenne Muscular Dystrophy"@en ;
+    dcat:keyword "DMD gene"@en, "Gen DMD"@es ;
+    dcat:keyword "Distrofina"@es, "Dystrophin"@en ;
+    dcat:keyword "Exon skipping"@en ;
+    dcat:keyword "BioLink Model"@en ;
+    dcat:keyword "Linked Data"@en ;
+    
+    # LICENCIA
+    dct:license <https://opensource.org/licenses/MIT> ;
+    cc:license <http://creativecommons.org/licenses/by/4.0/> ;
+    
+    # IDIOMA
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    
+    # CONTACTO 
+    dcat:contactPoint [
+        a vcard:Individual ;
+        vcard:fn "AngelLopezFrances" ;
+        vcard:hasEmail <mailto:angel.lopezf@um.es>
+    ] ;
+    
+    # LANDING PAGE (CAMBIAR CON TU PUERTO)
+    dcat:landingPage <http://dayhoff.inf.um.es:8181/DuchenneMuscularDystrophy> ;
+    
+    # VERSIÓN
+    dcat:version "1.0" ;
+    
+    # DISTRIBUCIONES
+    dcat:distribution <https://um.es/data/DMDgrafo_rdf> ;
+    dcat:distribution <https://um.es/data/DMDgrafo_sparql> ;
+    
+    # PROCEDENCIA
+    prov:wasDerivedFrom <https://www.ncbi.nlm.nih.gov/clinvar/> ;
+    prov:wasDerivedFrom <https://www.dmd.nl/> ;
+    prov:wasDerivedFrom <https://www.drugbank.ca/> ;
+    prov:wasDerivedFrom <https://hpo.jax.org/> ;
+    
+    # VOCABULARIOS UTILIZADOS
+    void:vocabulary <http://purl.obolibrary.org/obo/so.owl> ;
+    void:vocabulary <http://purl.obolibrary.org/obo/hp.owl> ;
+    void:vocabulary <http://purl.obolibrary.org/obo/go.owl> ;
+    void:vocabulary <http://purl.obolibrary.org/obo/doid.owl> ;
+    void:vocabulary <http://purl.obolibrary.org/obo/ro.owl> ;
+    void:vocabulary <https://w3id.org/biolink/biolink-model.owl> ;
+    
+    # ESTADÍSTICAS 
+    void:triples "120"^^xsd:integer ;
+    void:entities "35"^^xsd:integer ;
+    void:properties "12"^^xsd:integer .
+
+
+# DISTRIBUCIÓN: ARCHIVO RDF
+
+
+<https://um.es/data/DMDgrafo_rdf>
+    a dcat:Distribution ;
+    dct:title "Grafo DMD en formato RDF/XML"@es ;
+    dct:description "Archivo descargable del grafo en formato RDF/XML"@es ;
+    dcat:accessURL <https://github.com/angellopez20001/PracticaESD/blob/main/GrafoDMD.rdf> ;
+    dcat:downloadURL <https://github.com/angellopez20001/PracticaESD/raw/main/GrafoDMD.rdf> ;
+    dct:format "application/rdf+xml" ;
+    dcat:mediaType "application/rdf+xml" ;
+    dcat:byteSize "25000"^^xsd:decimal ;
+    dct:license <https://opensource.org/licenses/MIT> .
+
+
+# DISTRIBUCIÓN: ENDPOINT SPARQL
+
+
+<https://um.es/data/DMDgrafo_sparql>
+    a dcat:Distribution ;
+    dct:title "Endpoint SPARQL del grafo DMD"@es ;
+    dct:description "Acceso mediante consultas SPARQL al grafo DMD"@es ;
+    dcat:accessURL <http://dayhoff.inf.um.es:3041/blazegraph/namespace/DMDgrafo2/sparql> ;
+    dcat:accessService <https://um.es/service/DMDgrafo_sparql_service> ;
+    dct:format "application/sparql-query" ;
+    dct:conformsTo <https://www.w3.org/TR/sparql11-query/> ;
+    dct:license <https://opensource.org/licenses/MIT> .
+
+
+# SERVICIO SPARQL
+
+<https://um.es/service/DMDgrafo_sparql_service>
+    a dcat:DataService ;
+    dct:title "Servicio SPARQL para el grafo DMD"@es ;
+    dcat:endpointURL <http://dayhoff.inf.um.es:3041/blazegraph/namespace/DMDgrafo2/sparql> ;
+    dcat:servesDataset <https://um.es/data/DMDgrafoDataset> ;
+    dct:conformsTo <https://www.w3.org/TR/sparql11-protocol/> .
+
+
+# GRAFO NOMBRADO
+
+
+<https://um.es/graph/duchenne>
+    a sd:NamedGraph ;
+    sd:name <https://um.es/graph/duchenne> ;
+    dct:title "Grafo nombrado de Distrofia Muscular de Duchenne"@es ;
+    dct:description "Grafo RDF que contiene todas las tripletas relacionadas con DMD"@es ;
+    void:triples "120"^^xsd:integer .
+
+
+# CREADOR/AUTOR
+
+
+<https://um.es/person/AngelLopez>
+    a foaf:Person, prov:Agent ;
+    foaf:name "Angel Lopez Frances" ;
+    foaf:mbox <mailto:angel.lopezf@um.es> ;
+    schema:affiliation [
+        a foaf:Organization ;
+        foaf:name "Universidad de Murcia" ;
+        foaf:homepage <https://www.um.es/>
+    ] .
+
+
+# INFORMACIÓN DE PROCEDENCIA
+
+
+<https://um.es/data/DMDgrafoDataset>
+    prov:wasGeneratedBy <https://um.es/activity/DMDgrafo_creation> .
+
+<https://um.es/activity/DMDgrafo_creation>
+    a prov:Activity ;
+    prov:startedAtTime "2025-01-18T10:00:00Z"^^xsd:dateTime ;
+    prov:endedAtTime "2025-01-18T18:00:00Z"^^xsd:dateTime ;
+    prov:wasAssociatedWith <https://um.es/person/tu_nombre> ;
+    prov:used <https://www.ncbi.nlm.nih.gov/clinvar/> ;
+    prov:used <https://www.dmd.nl/> ;
+    prov:used <https://hpo.jax.org/> ;
+    rdfs:label "Creación del grafo RDF sobre Distrofia Muscular de Duchenne"@es .

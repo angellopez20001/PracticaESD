@@ -1,0 +1,209 @@
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/DOID_DOID_11723> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Disease> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://www.w3.org/2000/01/rdf-schema#label> "Distrofia Muscular de Duchenne"@es .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://www.w3.org/2000/01/rdf-schema#label> "Duchenne Muscular Dystrophy"@en .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://www.w3.org/2000/01/rdf-schema#comment> "Enfermedad gen\u00E9tica recesiva ligada al cromosoma X causada por mutaciones en el gen DMD."@es .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/tieneHerencia> <http://dmd_recursos.um.es/HerenciaRecesivaLigadaX> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/causadaPor> <http://dmd_recursos.um.es/Mutacion_Del_Exon51> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/causadaPor> <http://dmd_recursos.um.es/Mutacion_Del_Exon45> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/causadaPor> <http://dmd_recursos.um.es/Mutacion_Del_Exon53> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/causadaPor> <http://dmd_recursos.um.es/Mutacion_c9563T_A> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/causadaPor> <http://dmd_recursos.um.es/Mutacion_c10141C_T> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/causadaPor> <http://dmd_recursos.um.es/Mutacion_Dup_Exon2> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/tieneFenotipo> <http://dmd_recursos.um.es/FenotipoMusculoesqueletico> .
+<http://dmd_recursos.um.es/DuchenneMuscularDystrophy> <http://dmd_ontologia.um.es/tieneFenotipo> <http://dmd_recursos.um.es/FenotipoCardiaco> .
+<http://dmd_recursos.um.es/HerenciaRecesivaLigadaX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_HP_0001419> .
+<http://dmd_recursos.um.es/HerenciaRecesivaLigadaX> <http://www.w3.org/2000/01/rdf-schema#label> "Herencia Recesiva Ligada al X"@es .
+<http://dmd_recursos.um.es/HerenciaRecesivaLigadaX> <http://www.w3.org/2000/01/rdf-schema#comment> "Patr\u00F3n de herencia donde el gen mutado se encuentra en el cromosoma X."@es .
+<http://dmd_recursos.um.es/Gen_DMD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000704> .
+<http://dmd_recursos.um.es/Gen_DMD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Gene> .
+<http://dmd_recursos.um.es/Gen_DMD> <http://www.w3.org/2000/01/rdf-schema#label> "Gen DMD"@es .
+<http://dmd_recursos.um.es/Gen_DMD> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/gene/1756> .
+<http://dmd_recursos.um.es/Gen_DMD> <http://www.w3.org/2000/01/rdf-schema#comment> "Gen que codifica la prote\u00EDna distrofina, localizado en el cromosoma X."@es .
+<http://dmd_recursos.um.es/Gen_DMD> <http://dmd_ontologia.um.es/localizadaEn> <http://dmd_recursos.um.es/CromosomaX> .
+<http://dmd_recursos.um.es/Gen_DMD> <http://dmd_ontologia.um.es/codifica> <http://dmd_recursos.um.es/Proteina_Distrofina> .
+<http://dmd_recursos.um.es/CromosomaX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000340> .
+<http://dmd_recursos.um.es/CromosomaX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/GenomicEntity> .
+<http://dmd_recursos.um.es/CromosomaX> <http://www.w3.org/2000/01/rdf-schema#label> "Cromosoma X"@es .
+<http://dmd_recursos.um.es/Proteina_Distrofina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Protein> .
+<http://dmd_recursos.um.es/Proteina_Distrofina> <http://www.w3.org/2000/01/rdf-schema#label> "Distrofina"@es .
+<http://dmd_recursos.um.es/Proteina_Distrofina> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.uniprot.org/uniprot/P11532> .
+<http://dmd_recursos.um.es/Proteina_Distrofina> <http://www.w3.org/2000/01/rdf-schema#comment> "Prote\u00EDna estructural que conecta el citoesqueleto con la matriz extracelular en fibras musculares."@es .
+<http://dmd_recursos.um.es/Proteina_Distrofina> <http://dmd_ontologia.um.es/participaEn> <http://dmd_recursos.um.es/FuncionEstructuralMusculo> .
+<http://dmd_recursos.um.es/Proteina_Distrofina> <http://dmd_ontologia.um.es/participaEn> <http://dmd_recursos.um.es/UnionActina> .
+<http://dmd_recursos.um.es/Proteina_Distrofina> <http://dmd_ontologia.um.es/participaEn> <http://dmd_recursos.um.es/ContraMusculo> .
+<http://dmd_recursos.um.es/FuncionEstructuralMusculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/GO_GO_0008307> .
+<http://dmd_recursos.um.es/FuncionEstructuralMusculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/MolecularActivity> .
+<http://dmd_recursos.um.es/FuncionEstructuralMusculo> <http://www.w3.org/2000/01/rdf-schema#label> "Componente estructural del m\u00FAsculo"@es .
+<http://dmd_recursos.um.es/FuncionEstructuralMusculo> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_GO_0008307> .
+<http://dmd_recursos.um.es/UnionActina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/GO_GO_0003779> .
+<http://dmd_recursos.um.es/UnionActina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/MolecularActivity> .
+<http://dmd_recursos.um.es/UnionActina> <http://www.w3.org/2000/01/rdf-schema#label> "Uni\u00F3n a actina"@es .
+<http://dmd_recursos.um.es/UnionActina> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_GO_0003779> .
+<http://dmd_recursos.um.es/ContraMusculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/GO_GO_0006936> .
+<http://dmd_recursos.um.es/ContraMusculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/BiologicalProcess> .
+<http://dmd_recursos.um.es/ContraMusculo> <http://www.w3.org/2000/01/rdf-schema#label> "Contracci\u00F3n muscular"@es .
+<http://dmd_recursos.um.es/ContraMusculo> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_GO_0006936> .
+<http://dmd_recursos.um.es/Exon_45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000147> .
+<http://dmd_recursos.um.es/Exon_45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/GenomicEntity> .
+<http://dmd_recursos.um.es/Exon_45> <http://www.w3.org/2000/01/rdf-schema#label> "Ex\u00F3n 45"@es .
+<http://dmd_recursos.um.es/Exon_51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000147> .
+<http://dmd_recursos.um.es/Exon_51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/GenomicEntity> .
+<http://dmd_recursos.um.es/Exon_51> <http://www.w3.org/2000/01/rdf-schema#label> "Ex\u00F3n 51"@es .
+<http://dmd_recursos.um.es/Exon_53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000147> .
+<http://dmd_recursos.um.es/Exon_53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/GenomicEntity> .
+<http://dmd_recursos.um.es/Exon_53> <http://www.w3.org/2000/01/rdf-schema#label> "Ex\u00F3n 53"@es .
+<http://dmd_recursos.um.es/Exon_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000147> .
+<http://dmd_recursos.um.es/Exon_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/GenomicEntity> .
+<http://dmd_recursos.um.es/Exon_2> <http://www.w3.org/2000/01/rdf-schema#label> "Ex\u00F3n 2"@es .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000159> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/SequenceVariant> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://www.w3.org/2000/01/rdf-schema#label> "Deleci\u00F3n ex\u00F3n 51"@es .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://www.w3.org/2000/01/rdf-schema#comment> "Deleci\u00F3n del ex\u00F3n 51 del gen DMD, tratable con exon skipping."@es .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://dmd_ontologia.um.es/afectaGen> <http://dmd_recursos.um.es/Gen_DMD> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://dmd_ontologia.um.es/localizadaEn> <http://dmd_recursos.um.es/Exon_51> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://dmd_ontologia.um.es/tieneFrecuenciaAlelica> "0.02"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://dmd_ontologia.um.es/regula_negativamente> <http://dmd_recursos.um.es/Proteina_Distrofina> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Eteplirsen> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon51> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Deflazacort> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000159> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/SequenceVariant> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://www.w3.org/2000/01/rdf-schema#label> "Deleci\u00F3n ex\u00F3n 45"@es .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://www.w3.org/2000/01/rdf-schema#comment> "Deleci\u00F3n del ex\u00F3n 45 del gen DMD."@es .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://dmd_ontologia.um.es/afectaGen> <http://dmd_recursos.um.es/Gen_DMD> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://dmd_ontologia.um.es/localizadaEn> <http://dmd_recursos.um.es/Exon_45> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://dmd_ontologia.um.es/tieneFrecuenciaAlelica> "0.015"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://dmd_ontologia.um.es/regula_negativamente> <http://dmd_recursos.um.es/Proteina_Distrofina> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon45> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Deflazacort> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0000159> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/SequenceVariant> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://www.w3.org/2000/01/rdf-schema#label> "Deleci\u00F3n ex\u00F3n 53"@es .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://www.w3.org/2000/01/rdf-schema#comment> "Deleci\u00F3n del ex\u00F3n 53 del gen DMD."@es .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://dmd_ontologia.um.es/afectaGen> <http://dmd_recursos.um.es/Gen_DMD> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://dmd_ontologia.um.es/localizadaEn> <http://dmd_recursos.um.es/Exon_53> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://dmd_ontologia.um.es/tieneFrecuenciaAlelica> "0.018"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://dmd_ontologia.um.es/regula_negativamente> <http://dmd_recursos.um.es/Proteina_Distrofina> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Golodirsen> .
+<http://dmd_recursos.um.es/Mutacion_Del_Exon53> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Deflazacort> .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_1000035> .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/SequenceVariant> .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://www.w3.org/2000/01/rdf-schema#label> "Duplicaci\u00F3n ex\u00F3n 2"@es .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://www.w3.org/2000/01/rdf-schema#comment> "Duplicaci\u00F3n del ex\u00F3n 2 del gen DMD."@es .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX> .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://dmd_ontologia.um.es/afectaGen> <http://dmd_recursos.um.es/Gen_DMD> .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://dmd_ontologia.um.es/localizadaEn> <http://dmd_recursos.um.es/Exon_2> .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://dmd_ontologia.um.es/tieneFrecuenciaAlelica> "0.025"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://dmd_ontologia.um.es/regula_negativamente> <http://dmd_recursos.um.es/Proteina_Distrofina> .
+<http://dmd_recursos.um.es/Mutacion_Dup_Exon2> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Deflazacort> .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0001587> .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/SequenceVariant> .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://www.w3.org/2000/01/rdf-schema#label> "c.9563T>A"@es .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://www.w3.org/2000/01/rdf-schema#label> "p.Leu3188Ter"@es .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n sin sentido que introduce un cod\u00F3n de parada prematuro."@es .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX> .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://dmd_ontologia.um.es/afectaGen> <http://dmd_recursos.um.es/Gen_DMD> .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://dmd_ontologia.um.es/tieneFrecuenciaAlelica> "0.005"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://dmd_ontologia.um.es/reduce_expresion> <http://dmd_recursos.um.es/Proteina_Distrofina> .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Ataluren> .
+<http://dmd_recursos.um.es/Mutacion_c9563T_A> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Deflazacort> .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_SO_0001587> .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/SequenceVariant> .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://www.w3.org/2000/01/rdf-schema#label> "c.10141C>T"@es .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://www.w3.org/2000/01/rdf-schema#label> "p.Arg3381Ter"@es .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n sin sentido que genera un cod\u00F3n stop prematuro."@es .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/XXXXX> .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://dmd_ontologia.um.es/afectaGen> <http://dmd_recursos.um.es/Gen_DMD> .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://dmd_ontologia.um.es/tieneFrecuenciaAlelica> "0.004"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://dmd_ontologia.um.es/reduce_expresion> <http://dmd_recursos.um.es/Proteina_Distrofina> .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Ataluren> .
+<http://dmd_recursos.um.es/Mutacion_c10141C_T> <http://dmd_ontologia.um.es/tratadaCon> <http://dmd_recursos.um.es/Deflazacort> .
+<http://dmd_recursos.um.es/Eteplirsen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Drug> .
+<http://dmd_recursos.um.es/Eteplirsen> <http://www.w3.org/2000/01/rdf-schema#label> "Eteplirsen"@es .
+<http://dmd_recursos.um.es/Eteplirsen> <http://www.w3.org/2000/01/rdf-schema#label> "Exondys 51"@es .
+<http://dmd_recursos.um.es/Eteplirsen> <http://www.w3.org/2000/01/rdf-schema#comment> "Oligonucle\u00F3tido antisentido que permite el salto del ex\u00F3n 51."@es .
+<http://dmd_recursos.um.es/Eteplirsen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.drugbank.ca/drugs/DB11598> .
+<http://dmd_recursos.um.es/Eteplirsen> <http://dmd_ontologia.um.es/mecanismoAccion> "Exon skipping del ex\u00F3n 51"@es .
+<http://dmd_recursos.um.es/Golodirsen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Drug> .
+<http://dmd_recursos.um.es/Golodirsen> <http://www.w3.org/2000/01/rdf-schema#label> "Golodirsen"@es .
+<http://dmd_recursos.um.es/Golodirsen> <http://www.w3.org/2000/01/rdf-schema#label> "Vyondys 53"@es .
+<http://dmd_recursos.um.es/Golodirsen> <http://www.w3.org/2000/01/rdf-schema#comment> "Oligonucle\u00F3tido antisentido que permite el salto del ex\u00F3n 53."@es .
+<http://dmd_recursos.um.es/Golodirsen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.drugbank.ca/drugs/DB15381> .
+<http://dmd_recursos.um.es/Golodirsen> <http://dmd_ontologia.um.es/mecanismoAccion> "Exon skipping del ex\u00F3n 53"@es .
+<http://dmd_recursos.um.es/Ataluren> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Drug> .
+<http://dmd_recursos.um.es/Ataluren> <http://www.w3.org/2000/01/rdf-schema#label> "Ataluren"@es .
+<http://dmd_recursos.um.es/Ataluren> <http://www.w3.org/2000/01/rdf-schema#label> "Translarna"@es .
+<http://dmd_recursos.um.es/Ataluren> <http://www.w3.org/2000/01/rdf-schema#comment> "Permite la lectura a trav\u00E9s de codones de parada prematuros."@es .
+<http://dmd_recursos.um.es/Ataluren> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.drugbank.ca/drugs/DB08820> .
+<http://dmd_recursos.um.es/Ataluren> <http://dmd_ontologia.um.es/mecanismoAccion> "Readthrough de codones stop prematuros"@es .
+<http://dmd_recursos.um.es/Deflazacort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Drug> .
+<http://dmd_recursos.um.es/Deflazacort> <http://www.w3.org/2000/01/rdf-schema#label> "Deflazacort"@es .
+<http://dmd_recursos.um.es/Deflazacort> <http://www.w3.org/2000/01/rdf-schema#label> "Emflaza"@es .
+<http://dmd_recursos.um.es/Deflazacort> <http://www.w3.org/2000/01/rdf-schema#comment> "Corticoide que reduce la inflamaci\u00F3n muscular."@es .
+<http://dmd_recursos.um.es/Deflazacort> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.drugbank.ca/drugs/DB01380> .
+<http://dmd_recursos.um.es/Deflazacort> <http://dmd_ontologia.um.es/mecanismoAccion> "Efecto antiinflamatorio e inmunomodulador"@es .
+<http://dmd_recursos.um.es/FenotipoMusculoesqueletico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_HP_0003560> .
+<http://dmd_recursos.um.es/FenotipoMusculoesqueletico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/PhenotypicFeature> .
+<http://dmd_recursos.um.es/FenotipoMusculoesqueletico> <http://www.w3.org/2000/01/rdf-schema#label> "Manifestaciones Musculoesquel\u00E9ticas"@es .
+<http://dmd_recursos.um.es/FenotipoMusculoesqueletico> <http://dmd_ontologia.um.es/tieneFenotipo> <http://dmd_recursos.um.es/DebilidadMuscularProximal> .
+<http://dmd_recursos.um.es/FenotipoMusculoesqueletico> <http://dmd_ontologia.um.es/tieneFenotipo> <http://dmd_recursos.um.es/PseudohipertrofiaPantorrillas> .
+<http://dmd_recursos.um.es/FenotipoMusculoesqueletico> <http://dmd_ontologia.um.es/tieneFenotipo> <http://dmd_recursos.um.es/CKElevada> .
+<http://dmd_recursos.um.es/DebilidadMuscularProximal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_HP_0003701> .
+<http://dmd_recursos.um.es/DebilidadMuscularProximal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/PhenotypicFeature> .
+<http://dmd_recursos.um.es/DebilidadMuscularProximal> <http://www.w3.org/2000/01/rdf-schema#label> "Debilidad muscular proximal"@es .
+<http://dmd_recursos.um.es/DebilidadMuscularProximal> <http://www.w3.org/2000/01/rdf-schema#comment> "Debilidad progresiva en m\u00FAsculos proximales."@es .
+<http://dmd_recursos.um.es/DebilidadMuscularProximal> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/HP_HP_0003701> .
+<http://dmd_recursos.um.es/PseudohipertrofiaPantorrillas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_HP_0008981> .
+<http://dmd_recursos.um.es/PseudohipertrofiaPantorrillas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/PhenotypicFeature> .
+<http://dmd_recursos.um.es/PseudohipertrofiaPantorrillas> <http://www.w3.org/2000/01/rdf-schema#label> "Pseudohipertrofia de pantorrillas"@es .
+<http://dmd_recursos.um.es/PseudohipertrofiaPantorrillas> <http://www.w3.org/2000/01/rdf-schema#comment> "Aumento del tama\u00F1o de pantorrillas por infiltraci\u00F3n grasa."@es .
+<http://dmd_recursos.um.es/PseudohipertrofiaPantorrillas> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/HP_HP_0008981> .
+<http://dmd_recursos.um.es/CKElevada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_HP_0003236> .
+<http://dmd_recursos.um.es/CKElevada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/PhenotypicFeature> .
+<http://dmd_recursos.um.es/CKElevada> <http://www.w3.org/2000/01/rdf-schema#label> "Creatina quinasa elevada"@es .
+<http://dmd_recursos.um.es/CKElevada> <http://www.w3.org/2000/01/rdf-schema#comment> "Niveles muy elevados de CK s\u00E9rica."@es .
+<http://dmd_recursos.um.es/CKElevada> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/HP_HP_0003236> .
+<http://dmd_recursos.um.es/FenotipoCardiaco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_HP_0001627> .
+<http://dmd_recursos.um.es/FenotipoCardiaco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/PhenotypicFeature> .
+<http://dmd_recursos.um.es/FenotipoCardiaco> <http://www.w3.org/2000/01/rdf-schema#label> "Manifestaciones Card\u00EDacas"@es .
+<http://dmd_recursos.um.es/FenotipoCardiaco> <http://dmd_ontologia.um.es/tieneFenotipo> <http://dmd_recursos.um.es/MiocardiopatiaDilatada> .
+<http://dmd_recursos.um.es/FenotipoCardiaco> <http://dmd_ontologia.um.es/tieneFenotipo> <http://dmd_recursos.um.es/InsuficienciaCardiaca> .
+<http://dmd_recursos.um.es/MiocardiopatiaDilatada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_HP_0001644> .
+<http://dmd_recursos.um.es/MiocardiopatiaDilatada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/PhenotypicFeature> .
+<http://dmd_recursos.um.es/MiocardiopatiaDilatada> <http://www.w3.org/2000/01/rdf-schema#label> "Miocardiopat\u00EDa dilatada"@es .
+<http://dmd_recursos.um.es/MiocardiopatiaDilatada> <http://www.w3.org/2000/01/rdf-schema#comment> "Dilataci\u00F3n y disfunci\u00F3n del ventr\u00EDculo izquierdo."@es .
+<http://dmd_recursos.um.es/MiocardiopatiaDilatada> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/HP_HP_0001644> .
+<http://dmd_recursos.um.es/InsuficienciaCardiaca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_HP_0001635> .
+<http://dmd_recursos.um.es/InsuficienciaCardiaca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/PhenotypicFeature> .
+<http://dmd_recursos.um.es/InsuficienciaCardiaca> <http://www.w3.org/2000/01/rdf-schema#label> "Insuficiencia card\u00EDaca"@es .
+<http://dmd_recursos.um.es/InsuficienciaCardiaca> <http://www.w3.org/2000/01/rdf-schema#comment> "Incapacidad del coraz\u00F3n para bombear sangre eficientemente."@es .
+<http://dmd_recursos.um.es/InsuficienciaCardiaca> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/HP_HP_0001635> .
+<http://dmd_ontologia.um.es/causadaPor> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_RO_0003302> .
+<http://dmd_ontologia.um.es/causadaPor> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/biolink/vocab/causes> .
+<http://dmd_ontologia.um.es/causadaPor> <http://www.w3.org/2000/01/rdf-schema#label> "causada por"@es .
+<http://dmd_ontologia.um.es/afectaGen> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GENO_GENO_0000418> .
+<http://dmd_ontologia.um.es/afectaGen> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/biolink/vocab/gene_associated_with_condition> .
+<http://dmd_ontologia.um.es/afectaGen> <http://www.w3.org/2000/01/rdf-schema#label> "afecta gen"@es .
+<http://dmd_ontologia.um.es/codifica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_RO_0002205> .
+<http://dmd_ontologia.um.es/codifica> <http://www.w3.org/2000/01/rdf-schema#label> "codifica"@es .
+<http://dmd_ontologia.um.es/participaEn> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_RO_0000056> .
+<http://dmd_ontologia.um.es/participaEn> <http://www.w3.org/2000/01/rdf-schema#label> "participa en"@es .
+<http://dmd_ontologia.um.es/tratadaCon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_RO_0002302> .
+<http://dmd_ontologia.um.es/tratadaCon> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/biolink/vocab/treats> .
+<http://dmd_ontologia.um.es/tratadaCon> <http://www.w3.org/2000/01/rdf-schema#label> "tratada con"@es .
+<http://dmd_ontologia.um.es/tieneFenotipo> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_RO_0002200> .
+<http://dmd_ontologia.um.es/tieneFenotipo> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/biolink/vocab/has_phenotype> .
+<http://dmd_ontologia.um.es/tieneFenotipo> <http://www.w3.org/2000/01/rdf-schema#label> "tiene fenotipo"@es .
+<http://dmd_ontologia.um.es/localizadaEn> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_RO_0001025> .
+<http://dmd_ontologia.um.es/localizadaEn> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/biolink/vocab/location_of> .
+<http://dmd_ontologia.um.es/localizadaEn> <http://www.w3.org/2000/01/rdf-schema#label> "localizada en"@es .
+<http://dmd_ontologia.um.es/tieneFrecuenciaAlelica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/STATO_STATO_0000254> .
+<http://dmd_ontologia.um.es/tieneFrecuenciaAlelica> <http://www.w3.org/2000/01/rdf-schema#label> "tiene frecuencia al\u00E9lica"@es .
+<http://dmd_ontologia.um.es/reduce_expresion> <http://www.w3.org/2000/01/rdf-schema#label> "reduce expresi\u00F3n"@es .
+<http://dmd_ontologia.um.es/reduce_expresion> <http://www.w3.org/2000/01/rdf-schema#comment> "La mutaci\u00F3n reduce o elimina la producci\u00F3n de prote\u00EDna funcional."@es .
+<http://dmd_ontologia.um.es/regula_negativamente> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_RO_0002212> .
+<http://dmd_ontologia.um.es/regula_negativamente> <http://www.w3.org/2000/01/rdf-schema#label> "regula negativamente"@es .
+<http://dmd_ontologia.um.es/tieneHerencia> <http://www.w3.org/2000/01/rdf-schema#label> "tiene herencia"@es .
+<http://dmd_ontologia.um.es/mecanismoAccion> <http://www.w3.org/2000/01/rdf-schema#label> "mecanismo de acci\u00F3n"@es .
