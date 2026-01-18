@@ -1,0 +1,12 @@
+version: '3'
+services:
+  trifid:
+    image: zazuko/trifid:latest
+    ports:
+      - "8181:8080"
+    environment:
+      - SPARQL_ENDPOINT_URL=http://host.docker.internal:3041/blazegraph/namespace/DMDgrafo2/sparql
+      - DATASET_BASE_URL=http://dmd_recursos.um.es/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  
